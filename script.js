@@ -26,7 +26,7 @@ var map;
                     location: results[0].geometry.location,
                     radius: '5000', // Buscar dentro de un radio de 5 km
                     type: ['store'], // Puedes filtrar por tipo
-                    keyword: 'reparación' // Buscar por palabras clave como reparación
+                    keyword: 'tecnología reparaciones computadoras mantenimiento telefonos videojuegos consolas' // Buscar por palabras clave
                 };
                 service.nearbySearch(request, function (results, status) {
                     if (status === google.maps.places.PlacesServiceStatus.OK) {
